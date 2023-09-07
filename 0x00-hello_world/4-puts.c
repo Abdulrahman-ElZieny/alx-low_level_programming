@@ -1,5 +1,10 @@
 #include <stdio.h>
-int main()
+
+/**
+ * main - check the code
+ */
+
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 
