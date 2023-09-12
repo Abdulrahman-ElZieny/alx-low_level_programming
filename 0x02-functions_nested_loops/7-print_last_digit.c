@@ -10,7 +10,7 @@ int print_last_digit(int n)
 		n = 48;
 	if (n < 0)
 		n = -n;
-	for (;n > 9; n %= 10)
+	for (; n > 9; n %= 10)
 		;
 	_putchar(n + 48);
 	return (n);
