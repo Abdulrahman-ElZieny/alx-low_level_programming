@@ -4,7 +4,7 @@
  * @size: the size
  */
 void print_triangle(int size)
-{       
+{
 	int x, i;
 
 	if (size <= 0)
