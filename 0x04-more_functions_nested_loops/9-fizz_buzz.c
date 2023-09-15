@@ -11,7 +11,7 @@ int main(void)
 	{
 		t = x % 3;
 		f = x % 5;
-		if (x)
+		if (x - 1)
 			putchar(' ');
 		if (!t && !f)
 			printf("FizzBuzz");
