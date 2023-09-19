@@ -4,18 +4,16 @@
  */
 void rev_string(char *s)
 {
-	char *temp, *rev_string;
+	char *temp;
 	int len;
 
-	rev_string = temp;
 	for (len = 0; *s; s++)
 		len++;
 
-	for (; len; s--)
+	*temp = *s;
+	for (; len; --len)
 	{
-		*temp = *s;
-		temp++;
+		*s = temp[len];
+		s++;
 	}
-
-	return (rev_string)
 }
