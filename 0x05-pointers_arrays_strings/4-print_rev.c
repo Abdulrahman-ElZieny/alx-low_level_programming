@@ -6,10 +6,13 @@
 void print_rev(char *s)
 {
 	int len;
+	char *temp;
+
+	temp = s;
 
 	for (len = -1; *s; s++)
 		len++;
 	for (; len; len--, s--)
-		putchar(s);
+		putchar(temp[len]);
 	putchar('\n');
 }
