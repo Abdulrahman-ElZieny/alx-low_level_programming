@@ -9,7 +9,7 @@ void print_rev(char *s)
 
 	for (len = -1; *s; s++)
 		len++;
-	for (; len; len--)
-		putchar(s[len]);
+	for (; len; len--, s--)
+		putchar(s);
 	putchar('\n');
 }
